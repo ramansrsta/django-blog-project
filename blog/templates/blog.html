@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page </title>
+</head>
+<body>
+    {% for i in blog %}
+        <p> Author Name: {{ i.authorName }}</p>
+        <p> Blog Content:  {{ i.blog_content }}</p>
+        <p> Created At:  {{ i.created_at }}</p>
+        <hr>
+    {% endfor %}
+   
+</body>
+</html>
